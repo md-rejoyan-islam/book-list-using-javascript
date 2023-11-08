@@ -27,11 +27,13 @@ if (booksList.length > 0) {
 
 // add book function
 function addBook(e) {
+  // form prevent default
   e.preventDefault();
-
   const newForm = new FormData(e.target);
+
   const { title, author, isbn } = Object.fromEntries(newForm.entries());
 
+  // check empty value
   if (title === "" || author === "" || isbn === "") {
     error.textContent = "Please fill in all fields";
     error.classList.remove("hidden");
