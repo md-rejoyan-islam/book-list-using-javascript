@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Book List</title>
+  </head>
+  <body class="my-5 px-4 max-w-[750px] mx-auto">
+    <div class="head">
+      <h1 class="text-3xl font-semibold">Add Book</h1>
+    </div>
+    <div class="add-form">
+      <div class="">
+        <p
+          class="bg-red-500 text-white py-2 px-4 rounded-sm text-sm mt-5 error hidden"
+        ></p>
+      </div>
+      <form id="book-add-form">
+        <div class="my-3">
+          <label for="title" class="font-semibold text-lg py-1 block"
+            >Title</label
+          >
+          <input
+            type="text"
+            id="title"
+            name="title"
+            class="w-full py-2 px-4 rounded-md border border-zinc-300 focus:outline-none focus:border-[4px] focus:border-sky-200 focus:ring-blue-300"
+          />
+        </div>
+        <div class="my-3">
+          <label for="author" class="font-semibold text-lg py-1 block"
+            >Author</label
+          >
+          <input
+            type="text"
+            id="author"
+            name="author"
+            class="w-full py-2 px-4 rounded-md border border-zinc-300 focus:outline-none focus:border-[4px] focus:border-sky-200 focus:ring-blue-300"
+          />
+        </div>
+        <div class="my-3">
+          <label for="isbn" class="font-semibold text-lg py-1 block"
+            >ISBN#</label
+          >
+          <input
+            type="text"
+            id="isbn"
+            name="isbn"
+            class="w-full py-2 px-4 rounded-md border border-zinc-300 focus:outline-none focus:border-[4px] focus:border-sky-200 focus:ring-blue-300"
+          />
+        </div>
+        <div class="my-3">
+          <button
+            type="submit"
+            class="py-2 px-4 w-full rounded-md border focus:outline-none border-zinc-200 uppercase font-semibold text-lg text-white bg-sky-500 hover:bg-sky-600"
+          >
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="list my-8">
+      <table class="w-full">
+        <thead class="border-b-2 border-zinc-200">
+          <tr class="text-left">
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="space-y-2" id="book-list">
+          <!-- <tr>
+            <td>Book One</td>
+            <td>John Doe</td>
+            <td>123456789</td>
+            <td>
+              <button
+                class="py-2 px-4 rounded-md border focus:outline-none border-zinc-200 uppercase font-semibold text-xs text-white bg-red-400 hover:bg-red-500"
+              >
+                Delete
+              </button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
