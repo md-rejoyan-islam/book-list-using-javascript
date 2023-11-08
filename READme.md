@@ -6,7 +6,7 @@
 
 ### Description
 
-    <p>here you can easily add book information and delete any time. All the data save on local storage </p>
+<p>here you can easily add book information and delete any time. All the data save on local storage </p>
 
 ### Live Preview
 
