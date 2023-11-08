@@ -16,7 +16,7 @@ const bookList = document.querySelector("#book-list");
 bookAddForm.addEventListener("submit", addBook);
 
 // books list
-const booksList = localStorage.getItem("books")
+const booksList = localStorage?.getItem("books")
   ? JSON.parse(localStorage.getItem("books"))
   : [];
 
