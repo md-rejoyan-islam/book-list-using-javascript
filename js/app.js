@@ -63,6 +63,7 @@ function addBook(e) {
   }
 }
 
+// books loop
 function booksLoop(books) {
   let lists = "";
   books.forEach((book) => {
