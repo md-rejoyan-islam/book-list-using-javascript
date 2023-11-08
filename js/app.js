@@ -57,6 +57,8 @@ function addBook(e) {
 
     // save to local storage
     localStorage.setItem("books", JSON.stringify(booksList));
+
+    // form reset
     e.target.reset();
   }
 }
