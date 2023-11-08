@@ -42,6 +42,8 @@ function addBook(e) {
     const book = new Book(title, author, isbn);
     // check isbn number
     const isbnCheck = booksList.find((book) => book.isbn === isbn);
+
+    // if isbn number already exists
     if (isbnCheck) {
       error.textContent = "This ISBN number already exists";
       error.classList.remove("hidden");
