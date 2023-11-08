@@ -1,13 +1,13 @@
-### Book List Using JavaScript
+## Book List Using JavaScript
 
-#### CSS Framework
+### CSS Framework
 
 - Tailwindcss
 
-#### Description
+### Description
 
     here you can easily add book information and delete any time. All the data save on local storage
 
-#### Live Preview
+### Live Preview
 
 <a href="https://rejoyanislam.github.io/book-list-using-javascript/">Preview</a>
